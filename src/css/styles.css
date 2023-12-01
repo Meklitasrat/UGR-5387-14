@@ -1,0 +1,668 @@
+header{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height:fit-content;
+    padding:1em;
+    color:rgb(220, 180, 132);
+    background-image:url(https://static.vecteezy.com/system/resources/thumbnails/000/140/572/small/lowpoly-grey-gradient-vector.png);
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px grey;
+    
+  }
+  
+  header h1{
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-size: 1.5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(6, 6, 6);
+        
+
+  }
+  
+  .head-nav{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  
+  .nav-link{
+    border-style:solid;
+    display:none;
+    padding: 0.5em;
+    text-decoration: none;
+    color:rgb(108, 112, 112);
+    font-size:1em;
+    border-radius:2px;
+    width:fit-content;
+  } 
+  
+  .nav-link:hover{
+    background-color:rgb(226, 45, 45); 
+  }
+   
+  /* menu styles */
+  
+  .hamburger-menu{
+    display: grid;
+    gap:5px;
+    width: fit-content;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  /*color of the menu bar */
+  .hamburger-menu::before,
+  .hamburger-menu::after,
+  .hamburger-menu input {
+    content: "";
+    width: 50px;
+    height: 7px;
+    background-color: #000000;
+    border-radius: 9999px;
+    transform-origin: left center;
+  }
+   /*color of the menu bar */
+   
+  .hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+  }
+  
+  .sidebar nav ul{
+    display: none;
+    text-decoration: none;
+  }
+  
+  .hamburger-menu:has(input:checked) + .sidebar nav ul{
+    display:block;
+    padding:0.5em;
+    text-decoration:none;
+    width:fit-content;
+    border-radius:2px;
+    color:white;
+    font-size:1em;
+  }
+  /* Background of the menu's when hover*/
+  .hamburger-menu:has(input:checked) + .sidebar nav a:hover{
+    display:block;
+    padding:0.5em;
+    text-decoration:none;
+    background-color:rgb(232, 233, 208);
+    font-size:1em;
+  }
+  /* Background of the menu's when hover*/
+  
+
+@media screen and (max-width: 500px){
+    #desk{ content-visibility: hidden;}   
+}
+.sidebar nav ul li{
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.sidebar nav ul li a{
+    margin-bottom: 20px;
+    font-size: large;
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+}
+.sidebar nav ul li{
+    list-style-type: disc;
+    list-style-type: none;
+    
+}
+body{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS3etZwZsQbiQVeFyBwZ9315J83584d3jKbbrBm5fpxcMLKFP5-hRlW7cZr2tsui4Swuk&usqp=CAU)
+   
+}
+
+  /*  Home Page Styles*/
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+fieldset{
+    margin-right: 2vw;
+    margin-top: 10px;
+    padding: 10vw;
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+legend{
+   color: rgb(16, 15, 15);
+    border-style: none;
+    font-size: large;
+    font-weight: bolder;
+}
+.img img{
+    border-style: solid;
+    border-radius: 10%;
+    width: 50vw;
+    height: auto;
+    align-content: center;
+    margin-left: 10px;
+    
+    
+
+}
+.txt h4{
+    color: white;
+    position: relative;
+    bottom: 0;
+    background: rgb(54, 51, 51);
+    border-style: double;
+    font-weight: bolder;
+    font-size: large;
+    font-family: serif;
+    padding: 20px;
+}
+.cont:hover .txt{
+    opacity: 1;
+}
+aside p {
+    padding: 2vw;
+    font-weight: bold;
+    border-radius: 5%;
+    background-color: #fffdfd;
+    color: rgb(5, 5, 5);
+    border-style: solid;
+    align-items: center;
+    margin: 3vw;
+    margin-top: 10vh;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+    font-size: 15px;
+    font-family:serif;
+}
+
+@media screen and (max-width: 500px){
+    #desk{ content-visibility: hidden;}   
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    bottom: 0;
+    border-style:solid;
+    background-color: rgb(59, 57, 57);
+    border-radius: 10%; 
+    margin-top:65px;
+    
+}
+.right div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: flex-end;
+    font-size: large;
+    margin-top: 2px; 
+    align-self:center;
+    border-radius: 2px;
+    ;
+    
+}
+@keyframes bup{
+    from{transform:scale(0);}
+    to{transform:scale(10);}
+}
+.right div a{
+    text-decoration: none;
+   transition: transform 0.3s ease-in-out;
+   text-align: center;
+   font-size: 7vw;
+   color: rgb(187, 127, 38);
+   
+   
+}
+#copy{
+   
+      text-align: center;
+      color: rgb(230, 154, 41);
+      
+      
+}
+.right div a:hover{
+    animation: bup 0.3s ease-in-out 1 normal;
+    cursor: pointer;
+}
+p{
+   
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.right h3{
+    
+    color: rgb(207, 146, 55);
+    font-size: 7vw;
+}
+
+
+
+
+
+h1{
+   text-align: center;
+    font-style: italic; 
+    color: rgb(12, 12, 12);
+}
+.menu{
+    width: 100vw;
+    height: fit-content;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h3{
+    display: flex;
+    align-items: flex-start;
+}
+
+div img{
+    border-style: groove;
+    border-radius: 10%;
+    width: 70vw;
+    height: auto;
+    margin-left: 10vw;
+}
+     /* Styles For Hobby Page*/
+.books{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 20px;
+    margin: 2px;
+    border-style: groove;
+    width: 100vw;
+   
+
+}
+.books h3{
+    color: rgb(4, 4, 4);
+    
+}
+.sheldon{
+    
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+
+.sheldon img{
+    border-style: groove;
+    border-radius: 15%;
+    margin-left: 9vw ;
+}
+.sheldon p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+.JK{
+    margin: 5px;
+    
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.JK p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+.JK img{
+    width: 60vw;
+    border-style: groove;
+    border-radius: 15%;
+    margin-left: 13vw ;
+}
+.volley{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-style: groove;
+    width: 100vw;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.volley p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+.volley video{
+    border-style: double;
+    border-radius: 20px;
+    text-align: center;
+}
+.church{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-style: groove;
+    width: 100vw;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+
+}
+.church p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.church img{
+    border-style: groove;
+    border-radius: 10%;
+    width: 50vw;
+    
+}
+.Cooking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-style: groove;
+    width: 100vw;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.Cooking p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+.Cooking img{
+    border-style: groove;
+    border-radius: 10%;
+    width: 70vw;
+    margin-left: 1vw;
+}
+      /* Styles For Resume Page*/
+.language{
+    margin-left: 7vw;
+    border-style: groove;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.language img{
+    
+    border-style: solid;
+    border-radius: 10%;
+    width: 50vw;
+    align-items: center;
+    margin-top: 5vw;
+    margin-left: 23vw;
+    
+}
+.language dl{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+.language dl dt{
+    font-weight: bolder;
+    font-size: large;
+   }
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-style: groove;
+    width: 100vw;
+}
+.Elementary{
+    
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.Elementary p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+.Elementary img{
+    border-style: groove;
+    border-radius: 10%;
+    width: 70vw;
+}
+.highschool{
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.highschool p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+.highschool img{
+    border-style: groove;
+    border-radius: 10%;
+    width: 70vw;
+}
+.uni{
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.uni p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+.uni img{
+    border-style: groove;
+    border-radius: 10%;
+    width: 70vw;
+}
+fieldset legend + img{
+    border-color: aqua;
+    border-style: groove;
+    border-radius: 100%;
+    width: 70vw;
+}
+.Photoshop{
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.Photoshop p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+.Photoshop img{
+    border-style: groove;
+    border-radius: 10%;
+    width: 70vw;
+}
+.dribble{
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.dribble p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+.dribble video{
+    border-style: groove;
+    border-radius: 10%;
+    width: 70vw;
+}
+.Acting{
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.Acting p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+.Acting img{
+    border-style: groove;
+    border-radius: 10%;
+    width: 70vw;
+}
+.adobe{
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.adobe p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+
+.adobe img{
+    margin-top: 2vw;
+    border-style: groove;
+    border-radius: 10%;
+    width: 70vw;
+}
+.billboard{
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.billboard p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+.billboard img{
+    border-style: groove;
+    border-radius: 10%;
+    width: 70vw;
+}
+
+      /*  Style for Extracurricular*/
+
+.Stem{
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.Stem p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44)
+}
+.Stem img{
+    border-style: groove;
+    width: 50vw;
+    height: 30vh;
+    margin-left: 13vw;
+}
+.fere{
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.fere p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44)
+}
+.fere img{
+    border-style: groove;
+    width: 50vw;
+    margin-left: 13vw;
+    
+}
+.librarian{
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.librarian p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44)
+}
+.librarian img{
+    border-style: groove;
+    border-radius: 10%;
+    width: 50vw;
+    margin-left: 12vw;
+    height: 60vw;
+}
+.Maths{
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+.Maths p{
+    font-weight: bold;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+.Maths img{
+    border-style: groove;
+    border-radius: 10%;
+    width: 50vw;
+    height: 40vh;
+    margin-left: 12vw;
+    height: 50vw;
+}
+
+/* Styles For Certificate*/
+tbody tr:nth-child(even) {
+    background-color: #e7d3ba;
+  }
+  table {
+    border-collapse: collapse;
+    border: 2px inset black;
+    margin-right:auto;
+    box-shadow:-6px -5px grey;
+  }
+  
+  th, td {
+    padding-left: 8px;
+    font-weight: bold;
+  }
+  td li{
+    list-style-type:circle;
+    text-align: left;
+  }
+  td p{
+    font-weight:bold;
+    padding: 20px;
+  }
+
+td img{
+    width:100%
+}
+table, th, td{
+    border: 2px solid;
+    border-collapse: collapse;
+    
+}
+th,td{
+    color: rgb(66, 44, 19);
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44);
+}
+table img{
+    width: 20vw;
+    text-align: center;
+    border-radius: 100%;
+    margin-top: 2vw;
+}
+table ul li{
+    text-align: left;
+}
